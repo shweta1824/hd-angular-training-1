@@ -1,0 +1,82 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100vh;
+}
+
+.example-full-width {
+  width: 65vh;
+}
+
+.logo {
+  width: 30vw;
+  margin-left: 3vh
+}
+
+.main {
+  margin-top: 15vh;
+  margin-left: 33vw;
+}
+
+.card {
+  width: 70vh;
+}
+
+.button {
+  margin-left: 5%;
+}
+
+.continue {
+  background-color: #3f51b5;
+  height: 7vh;
+  width: 27vh;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: medium;
+}
+
+.cancel {
+  background-color: #3f51b5;
+  height: 7vh;
+  width: 27vh;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: medium;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .logo {
+   width: 50vh;
+  }
+  
+  .main {
+   position: absolute;
+   margin: 20% 2% 0% 2%;
+  }
+
+  .card {
+    width: 45vh;
+    margin-left: 0;
+  }
+  
+  .continue {
+    background-color: #3f51b5;
+    height: 40px;
+    width: 40%;
+    border: none;
+    color: white;
+    font-size: medium;
+  }
+  
+  .cancel {
+    background-color: #3f51b5;
+    height: 40px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: medium;
+  }
+}

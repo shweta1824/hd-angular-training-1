@@ -1,0 +1,12 @@
+<div>
+  <mat-toolbar color="primary">
+    <span>
+      <h1>Hudson Data</h1>
+    </span>
+    <span class="example-spacer"></span>
+    <ng-container *ngIf="userName">
+      <span class="usernamee">{{ userName }}</span>&nbsp;&nbsp;
+      <button mat-button (click)="onLogout()" class="logoutButton">Logout</button>
+    </ng-container>
+  </mat-toolbar>
+</div>
