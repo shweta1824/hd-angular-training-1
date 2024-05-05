@@ -6,9 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
   private readonly USER_KEY = 'user';
- private readonly searchCount = 'searchCount'
+  private readonly searchCount = 'searchCount'
 
-  constructor() {}
+  constructor() { }
 
   login(name: string): void {
     localStorage.setItem(this.USER_KEY, name);
@@ -20,7 +20,12 @@ export class AuthService {
   }
 
   isAuthenticated(): boolean {
-    return !!localStorage.getItem(this.USER_KEY);
+    if (localStorage.getItem(this.USER_KEY)) {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 
   getUserName(): string | null {

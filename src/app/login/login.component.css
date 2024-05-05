@@ -1,82 +1,69 @@
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100vh;
-}
-
-.example-full-width {
-  width: 65vh;
-}
-
-.logo {
-  width: 30vw;
-  margin-left: 3vh
+.loginComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .main {
-  margin-top: 15vh;
-  margin-left: 33vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 200px; /* Adjust size as needed */
+  margin-bottom: 20px;
 }
 
 .card {
-  width: 70vh;
+  width: 400px; /* Adjust size as needed */
 }
 
-.button {
-  margin-left: 5%;
+.login-form {
+  width: 100%;
 }
 
-.continue {
+.full-width {
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.continue-btn, .cancel-btn {
+  width: 150px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.continue-btn {
   background-color: #3f51b5;
-  height: 7vh;
-  width: 27vh;
-  border-radius: 10px;
-  border: none;
   color: white;
-  font-size: medium;
 }
 
-.cancel {
-  background-color: #3f51b5;
-  height: 7vh;
-  width: 27vh;
-  border-radius: 10px;
-  border: none;
+.cancel-btn {
+  background-color: #f44336;
   color: white;
-  font-size: medium;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .logo {
-   width: 50vh;
-  }
-  
-  .main {
-   position: absolute;
-   margin: 20% 2% 0% 2%;
+      width: 150px;
   }
 
   .card {
-    width: 45vh;
-    margin-left: 0;
+      width: 300px;
   }
-  
-  .continue {
-    background-color: #3f51b5;
-    height: 40px;
-    width: 40%;
-    border: none;
-    color: white;
-    font-size: medium;
-  }
-  
-  .cancel {
-    background-color: #3f51b5;
-    height: 40px;
-    width: 40%;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    font-size: medium;
+
+  .continue-btn, .cancel-btn {
+      width: 120px;
+      font-size: 14px;
   }
 }

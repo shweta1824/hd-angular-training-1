@@ -1,18 +1,17 @@
-<div>
-    <app-header></app-header>
+<div class="loginComponent">
+   
     <div class="main">
         <img src="/assets/download.png" class="logo" />
         <mat-card class="card">
             <mat-card-content>
-                <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="example-form">
-                    <mat-form-field appearance="fill" class="example-full-width">
+                <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="login-form">
+                    <mat-form-field appearance="fill" class="full-width">
                         <mat-label>User Name</mat-label>
                         <input matInput type="text" [(ngModel)]="name" name="name" required />
                     </mat-form-field>
-                    <div class="button">
-                        <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid" class="continue">Continue</button>
-                        &nbsp;&nbsp;
-                        <button mat-raised-button color="warn" class="cancel"(click)="onCancel()">Cancel</button>
+                    <div class="button-container">
+                        <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid" class="continue-btn">Continue</button>
+                        <button mat-raised-button color="warn" class="cancel-btn" (click)="onCancel()">Cancel</button>
                     </div>
                 </form>
             </mat-card-content>
